@@ -9,8 +9,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Копируем наши скрипты
-COPY docker_monitor.sh /usr/local/bin/docker_monitor.sh
-COPY docker-compose.yml /docker-compose.yml
+COPY docker_monitor (2).sh /usr/local/bin/docker_monitor (2).sh
+COPY docker-compose (3).yml /docker-compose (3).yml
 
 # Делаем скрипт исполняемым
 RUN chmod +x /usr/local/bin/docker_monitor.sh
